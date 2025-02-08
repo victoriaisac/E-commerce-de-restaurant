@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido Online</title>
+    <link rel="stylesheet" href="./icomoon/style.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    
+</head>
+<body>
+    <header>
+        <div class="barra-nav">
+    
+            <a href="index.html" class="anclaInicio">
+    
+                <div class="contenedorLogo">
+                    <h1 id="tituloHeaderUno">Madre <br>
+                    <p id="tituloHeaderDos">
+                    Restaurante Mexicano
+                    </p>
+                    </h1>
+                </div>
+    
+            </a>
+    
+            <nav>
+                <ul id="Menu">
+                    <li class="navegador"><a href="menu.html" class="navegador">Menú</a></li>
+                    <li class="navegador"><a href="pedidos.html" class="navegador">Pedir Online</a></li>
+                    <li class="icon-cart" id="carrito">
+                        <span id="cuentaCarrito">0</span> 
+                        <div class="buy-card">
+                            <ul class="nav-card">
+                                <li>Nombre</li>
+                                <li>Precio</li>
+                                <li>Cantidad</li>
+                                <li></li>
+                            </ul>
+                            <div class="listaDeProductos">
+                            </div>
+                            
+                            <a href="formulario.html" id="botonCarrito">
+                                <button>
+                                    <i class="fas fa-shopping-cart">Ordenar</i>
+                                </button>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="contenedorImagen">
+            <div class="ContenedorTituloPedidos">
+                <h1 id="tituloPedidos">Ordena en línea!</h1>
+                <p id="parrafoPedidos">Podes ordenar en línea! Explora los elementos de nuestro menú y elegí lo que te gusta</p>
+            </div>
+        </header>
+
+        <main id="main">
+                <h2 class="subtituloMenu">Menú</h2>
+
+                <hr>
+
+                <h3 class="tipoDeProducto">Entradas</h3>
+
+            <div class="contenedores" >
+
+                <div class="contenedorProducto">
+                    <h4 class="nombreProducto">Nachos Caseros</h4>
+                    <p class="descripcionProducto">Hojuelas de maiz con salsa guacamole y queso chedar</p>
+                    <p class="precio"> $90</p>
+                    <button class="agregarCarrito" data-id="1">pedir</button>
+                </div>
+
+                <div class="contenedorProducto">
+                    <h4 class="nombreProducto">Maiz asado Mexicano</h4>
+                    <p class="descripcionProducto">Maiz pelado y asado sobre parrilla</p>
+                    <p class="precio">$50</p>
+                    <button class="agregarCarrito" data-id="2">pedir</button>
+                </div>
+
+                <div class="contenedorProducto">
+                    <h4 class="nombreProducto">Ensalada de fajitas</h4>
+                    <p class="descripcionProducto">Fajitas de pollo con ensalada</p>
+                    <p class="precio">$60</p>
+                    <button class="agregarCarrito" data-id="3">pedir</button>
+                </div>
+
+                <div class="contenedorProducto">
+                    <h4 class="nombreProducto">Mini Quesadillas</h4>
+                    <p class="descripcionProducto">Tortilla de maiz rellena de queso</p>
+                    <p class="precio">$90</p>
+                    <button class="agregarCarrito" data-id="4">pedir</button>
+                </div>
+            </div>
+
+            <h3 class="tipoDeProducto">Tacos</h3>
+
+            <div class="contenedores" >
+
+                <div class="contenedorProducto">
+                    <h4 class="nombreProducto">Tacos de pollo</h4>
+                    <p class="descripcionProducto">Dos tortillas de maiz rellena de pollo, pimiento y cebolla</p>
+                    <p class="precio">$120</p>
+
+                    <button class="agregarCarrito" data-id="5">pedir</button>
+                </div>
+
+                <div class="contenedorProducto">
+                    <h4 class="nombreProducto">Tacos de pezcado</h4>
+                    <p class="descripcionProducto">Dos tortillas de maiz rellena de pezcado frito</p>
+                    <p class="precio">$120</p>
+
+                    <button class="agregarCarrito" data-id="6">pedir</button>
+                </div>
+
+                <div class="contenedorProducto">
+                    <h4 class="nombreProducto">Tacos al pastor</h4>
+                    <p class="descripcionProducto">Dos tortillas de maiz rellenas de cerdo,marinado en salsa de chile</p>
+                    <p class="precio">$150</p>
+
+                    <button class="agregarCarrito" data-id="7">pedir</button>
+                </div>
+
+                <div class="contenedorProducto">
+                    <h4 class="nombreProducto">Tacos vegetariano</h4>
+                    <p class="descripcionProducto">Dos tortillas de maiz rellena de queso y mix de vegetales</p>
+                    <p class="precio">$100</p>
+
+                    <button class="agregarCarrito" data-id="8">pedir</button>
+                </div>
+            </div>
+
+            
+            <h3 class="tipoDeProducto">Bebidas</h3>
+
+            <div class="contenedores" >
+
+                <div class="contenedorProducto">
+                    <h4 class="nombreProducto">Agua</h4>
+
+                    <p class="precio">$10</p>
+
+                    <button class="agregarCarrito" data-id="9">pedir</button>
+                </div>
+
+                <div class="contenedorProducto">
+                    <h4 class="nombreProducto">Gaseosa</h4>
+                    
+                    <p class="precio">$12</p>
+
+                    <button class="agregarCarrito" data-id="10">pedir</button>
+                </div>
+
+                <div class="contenedorProducto">
+                    <h4 class="nombreProducto">Cerveza</h4>
+                    
+                    <p class="precio">$15</p>
+
+                    <button class="agregarCarrito" data-id="11">pedir</button>
+                </div>
+
+                <div class="contenedorProducto">
+                    <h4 class="nombreProducto">Margarita</h4>
+                    
+                    <p class="precio">$20</p>
+
+                    <button class="agregarCarrito" data-id="12">pedir</button>
+                </div>
+            </div>
+        </main>
+        <footer class="pie2"> 
+            <p>© 2035 por madre Desarrollado y asegurado por Wix 500 Terry Prancine Calle, San francisco CA 94158. Tel 123-456-7890</p>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </footer>
+<script src="./js/index.js"></script>
+</body>
+</html>

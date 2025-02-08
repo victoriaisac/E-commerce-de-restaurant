@@ -1,0 +1,435 @@
+/* TIPOGRAFIA 
+-Cursiva : sansita-swashed del 300 al 900
+-Imprenta : Oswald del 200 al 700*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Sansita+Swashed:wght@300..900&display=swap');
+
+*{
+    margin: 0; 
+    padding: 0;
+}
+
+/* HEADER */
+
+
+.barra-nav{display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 20px 50px;
+
+    color: #e00000;
+    background-color: #ffffff;}
+
+#tituloHeaderUno {
+    font-family: "Sansita Swashed", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 3em;
+
+    display: flex;
+align-items: center;
+flex-direction: column;
+}
+
+.anclaInicio {    color: #e00000;
+    text-decoration: none;}
+
+#tituloHeaderDos {  font-family: "Oswald", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+font-size: 0.3em;}
+
+.contenedorLogo {display: flex;
+align-items: left;
+cursor: pointer;
+}
+
+
+#Menu {display: flex;
+flex-direction: row;
+
+font-family: "Oswald", system-ui;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+font-size: 1.5em;
+}
+
+.navegador, .icon-cart:hover{color: #650B0B;}
+
+.navegador, .icon-cart, li    {margin: 3vh;
+    list-style: none;
+    cursor: pointer;
+    color: #e00000;
+text-decoration: none;
+    }
+
+.navegador #cuentaCarrito {margin: 0;}
+
+#cuentaCarrito{background-color: #f3f99a;
+border-radius: 100%;
+display: inline-block;
+width: 25px;
+line-height: 25px;
+aspect-ratio: 1;
+text-align: center;}
+
+#cuentaCarrito:hover{color: #e00000;}
+
+/* MAIN */
+
+.contenedorCentral {display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color:#f9fccc;
+
+    background: linear-gradient(to bottom, rgba(0 0 0/ .5), rgba(0 0 0/ .25)), url(../imagenes/imagenHome.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    
+}
+
+.tituloMainUno {font-family: "Sansita Swashed", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+font-size: 9em;
+
+margin-top: 1em;}
+
+.tituloMainDos {font-family: "Oswald", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+font-size: 2.5em;
+margin: 0.5em 1em;}
+
+
+.contendorTituloDos {display: flex;
+flex-direction: row;}
+
+.botonMain{font-family: "Oswald", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.5em;
+
+color: #f9fccc;
+background-color: transparent;
+
+border: 3px solid;
+border-radius: 40px;
+padding: 10px 50px;
+margin: 0 10px;
+
+text-align: center;
+
+margin-bottom: 5em;
+
+cursor: pointer;
+}
+
+.botonMain:hover {background-color: #e00000;
+border: #e00000;
+transition: .3s ease-in-out;}
+
+
+/* PEDIDOS.HTML */
+
+.contenedorImagen {background-image: url(../imagenes/tacos1.png);
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+padding: 15vh 2vw; 
+
+display: flex;
+align-items: flex-end;}
+
+.ContenedorTituloPedidos {background-color: #ffffff;
+color: #e00000;
+
+margin-top: 3em;
+padding: 1em;
+
+text-align: left;
+width:40%;
+
+}
+
+#tituloPedidos {font-family: "Sansita Swashed", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 3em;
+
+    margin-bottom: 0.5em;
+}
+
+#parrafoPedidos{font-family: "Oswald", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+font-size: 1.5em;
+color: black;}
+
+#main {margin: 20px 30px;}
+
+.subtituloMenu{font-family: "Sansita Swashed", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 2em;
+
+color: #e00000;
+
+}
+
+hr{ 
+    border: 1px solid #e00000;
+    margin: 20px 0;
+}
+
+.tipoDeProducto{font-family: "Oswald", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+
+    color: #e00000;}
+
+.contenedores{display: flex;
+flex-wrap: wrap;
+}
+
+.contenedorProducto{ width: 28%; 
+background-color: #f9fccc;
+margin: 15px;
+padding: 10px;
+cursor: pointer;}
+
+.contenedorProducto:hover {background-color: #eee8f0
+    ;}
+
+.nombreProducto, .descripcionProducto, .precio{font-family: "Oswald", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+color: black;}
+
+.nombreProducto{font-size: 1.5em;}
+.precio{font-weight: 400;
+padding-top: 15px;}
+.descripcionProducto{margin: 15px 0;}
+
+.agregarCarrito{
+    font-family: "Oswald", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5em;
+
+color: #e00000;
+background-color: transparent;
+
+border: 3px solid;
+border-radius: 40px;
+padding: 5px 30px;
+margin: 0 10px;
+
+text-align: center;
+cursor: pointer;
+}
+.agregarCarrito:hover {
+    background-color: #e00000;
+    color: #ffffff;
+    transition: .3s ease-in-out;
+}
+
+.agregarCarrito:active{
+    transform: scale(.9);
+}
+
+/* CARRITO */
+
+.nav-card {display: none;}
+#Menu .icon-cart .buy-card button {display: none;}
+
+.barra-nav nav #Menu .icon-cart:hover > .buy-card {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    background-color: #ffffff;
+    overflow: auto;
+    overflow-x: auto;
+}
+
+.barra-nav nav #Menu .icon-cart:hover .nav-card {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+    font-size: 1rem;
+    border-bottom: solid 1px #e00000;
+
+
+    font-family: "Sansita Swashed", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    }
+
+.nav-card li { font-weight: bold;}
+
+#botonCarrito{text-decoration: none;}
+
+.barra-nav nav #Menu .icon-cart:hover .buy-card #botonCarrito >  button  {display: block;
+width: 90%;
+padding: 1rem;
+margin: 10px auto;
+background-color: transparent;
+color: #e00000;
+border: solid 2px #e00000;  
+border-radius: 10px;
+cursor: pointer;
+
+
+
+font-family: "Oswald", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;}
+
+.barra-nav nav #Menu .icon-cart:hover .buy-card #botonCarrito>  button:hover {
+color: #ffffff;
+background-color: #e00000;
+border: #e00000;
+transition: .3s ease-in-out;
+}
+
+/* Elementos del carrito */
+
+.listaDeProductos div{
+    display: none;
+}
+.barra-nav nav #Menu .icon-cart:hover .buy-card > .listaDeProductos div {
+    display: flex;
+    text-align: center;
+    padding: 5px 20px ;
+    border-top: solid 2px #e00000;
+    margin: 0 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.listaDeProductos p {
+margin: 10px;
+width: 300px;
+
+font-family: "Oswald", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.5rem;
+
+
+}
+
+.listaDeProductos p:nth-child(2) {
+    margin-left: 30px;
+}
+
+.listaDeProductos p:nth-child(3) {
+    margin-left: 40px;
+}
+
+.listaDeProductos p:last-child {
+
+text-align: center;
+padding: 10px 10px;
+font-weight: bold;
+}
+
+/* footer */
+.pie2 {
+    background-color: #E10000;
+    padding: 0.5em 0;
+    text-align: center;
+    font-size: 16px; 
+    bottom: 0;
+    width: 100%;
+    color: #FAAB98;
+
+}
+
+@font-face {
+    font-family: 'open-sans.regular';
+    src: url(../icomoon/fonts/open-sans.regular.ttf);
+}
+
+#titulo {
+    text-align: center;
+    color: #C10808;
+    font-family: 'open-sans.regular';
+    font-size: 40px;
+}
+/* menu */
+.container {
+    display: flex;
+    height: 100vh;
+    position: relative;
+    margin:0;
+    padding: 0; 
+    overflow: hidden;
+    width: 100%;   
+    box-sizing:  border-box;
+
+}
+
+.menu {
+    background-color: #950000;
+    width: 100%;
+    font-family: 'open-sans.regular';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.producto{width: 80%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin: 20px 50px;
+
+font-family: "Oswald", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.5em;}
+
+.hrMenu{
+border: 2px solid #F6E2DD;
+width: 50%;
+}
+
+#titulo{
+    margin-bottom: 30px;
+}
+
+.alinear{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.tituloProducto{
+    color: #f3f99a;
+    font-size: 2em;
+}

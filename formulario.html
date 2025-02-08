@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Pedido</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./css/formulario.css">
+</head>
+<body>
+    <main>
+        
+        <form action="pedido-online" id="formulario">
+            <fieldset class="contenedor">
+                <legend>DATOS DEL ENVIO</legend>
+
+                <label for="nombre">Nombre*:</label> <br>
+                <input title="nombre" type="text" required><br>
+
+                <label for="direccion">Dirección*:</label> <br>
+                <input type="text" title="direccion" required><br>
+
+                <label for="entre-calles">Entre Calles:</label> <br>
+                <input type="text" title="entre-calles">
+
+                <label for="telefono">Telefono*:</label> <br>
+                <input type="tel" title="telefono" required><br>
+
+                <label for="correo">Email:</label><br>
+                <input type="email"  title="correo" placeholder="Ej: mail@gmail.com"> <br>
+
+                <div class="datosPedido"></div>
+
+                <button type="submit" class="enviar">ENVIAR</button>
+
+                <p class="confirmacion"></p>
+            </fieldset>
+
+        </form>
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+    const datosPedido = document.querySelector(".datosPedido");
+    const productosCarrito = JSON.parse(localStorage.getItem("pedido")) || [];
+
+    if (productosCarrito.length > 0) {
+        productosCarrito.forEach(producto => {
+            const item = document.createElement("p");
+            item.textContent = `${producto.cantidad} x ${producto.nombre} - $${producto.precio}`;
+            datosPedido.appendChild(item);
+        });
+
+
+        const total = productosCarrito.reduce((acc, producto) => acc + producto.precio * producto.cantidad, 0);
+        const totalElement = document.createElement("p");
+        totalElement.textContent = `Total: $${total}`;
+        datosPedido.appendChild(totalElement);
+    } else {
+        datosPedido.textContent = "No hay productos en el carrito.";
+    }
+});
+
+const formulario = document.querySelector("#formulario")
+let numero = 0
+
+formulario.addEventListener("submit", function (event) {
+    event.preventDefault()
+
+    numero++
+
+    const mensajeConfirmacion = document.querySelector(".confirmacion");
+    if (mensajeConfirmacion) {
+        mensajeConfirmacion.innerHTML = `Pedido confirmado, tu número de orden es: ${numero}`;
+
+    } 
+    
+    document.querySelector("#formulario").reset();
+
+    localStorage.removeItem("pedido");
+})
+
+
+    </script>
+</body>
+</html>
